@@ -1,31 +1,32 @@
 .full-width {
     width: 100%;
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    min-height: 100vh;
 }
 .header-bg {
-    background-color: #f8f9fa; /* Color de fondo del header */
+    background-color: #f8f9fa;
+    padding: 30px 0;
 }
 .video-section video {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-
 .parallax-section {
     position: relative;
     background: url('../assets/movingBackground.jpeg') no-repeat center center;
     background-size: cover;
-    min-height: 100vh; /* Asegura que la sección tenga altura */
+    min-height: 50vh;
 }
-
 .car-overlay {
     position: absolute;
-    top: 50%; /* Centrado verticalmente */
-    right: 0; /* Comienza desde la derecha */
-    transform: translateY(-50%); /* Ajusta el centrado vertical */
-    transition: right 0.1s ease-out; /* Suaviza el movimiento */
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition: right 0.1s ease-out;
+    width: 600px; /* Tamaño fijo */
+    height: auto;
+    max-width: none; /* Anula el max-width de img-fluid */
 }
 .noticias-section, .suscribe-section, .footer-section {
-    background-color: #e9ecef; /* Color de fondo de ejemplo */
+    background-color: #e9ecef;
 }
-
