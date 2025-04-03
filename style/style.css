@@ -58,9 +58,17 @@ body {
 }
 
 /* Estilizar el logo */
+.logo-container {
+    flex: 1; /* Hace que el contenedor ocupe el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+}
+
 .offcanvas-logo {
     max-width: 150px;
     height: auto;
+    margin-left: 30px;
+    
 }
 
 /* Estilos para el cuerpo del offcanvas */
@@ -68,7 +76,8 @@ body {
     font-family: 'Dharma Punk', sans-serif;
     color: #fff !important;
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
+    
 }
 
 /* Estilos para los enlaces dentro del offcanvas */
@@ -77,7 +86,6 @@ body {
     color: #fff !important;
     text-transform: uppercase;
     font-weight: 500;
-    padding: 10px 0;
     transition: color 0.3s ease;
 }
 
@@ -88,7 +96,6 @@ body {
 /* Estilos específicos para los enlaces con clase .nav-link */
 .offcanvas .offcanvas-body .nav-link {
     display: block;
-    padding: 10px 0;
 }
 
 /* Estilos para los íconos sociales */
@@ -105,4 +112,20 @@ body {
 
 .social-icons {
     font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos para el botón que contiene la imagen */
+.menu-button {
+    background: rgba(0, 0, 0, 0.5); /* Gris traslúcido (opacidad 0.5) */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 8px; /* Espacio interno para que la imagen no quede pegada a los bordes */
+    cursor: pointer; /* Cursor de mano al pasar el mouse */
+}
+
+/* Estilos para la imagen del menú */
+.menu-icon {
+    width: 100px; /* Ajusta el ancho de la imagen según tu diseño */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura que la imagen ocupe todo el espacio del botón */
 }
