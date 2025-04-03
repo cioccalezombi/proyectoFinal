@@ -1,16 +1,11 @@
 .full-width {
     width: 100%;
-    min-height: 100vh;
+    
 }
 .header-bg {
-    background-color: #f8f9fa;
     padding: 30px 0;
 }
-.video-section video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
+
 .parallax-section {
     position: relative;
     background: url('../assets/movingBackground.jpeg') no-repeat center center;
@@ -27,6 +22,87 @@
     height: auto;
     max-width: none; /* Anula el max-width de img-fluid */
 }
-.noticias-section, .suscribe-section, .footer-section {
-    background-color: #e9ecef;
+
+
+body {
+    background-image: url('../assets/background.png'); /* Reemplaza con la URL o ruta de tu imagen */
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    margin: 0;
+    color: white;
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+@font-face {
+    font-family: 'Dharma Punk';
+    src: url('../assets/fonts/Dharma Punk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos para el offcanvas */
+.offcanvas {
+    background-color: #000 !important; /* Fondo negro */
+}
+
+/* Estilos para el header del offcanvas */
+.offcanvas-header {
+    background-color: #000 !important;
+    color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilizar el logo */
+.offcanvas-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilos para el cuerpo del offcanvas */
+.offcanvas .offcanvas-body {
+    font-family: 'Dharma Punk', sans-serif;
+    color: #fff !important;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Estilos para los enlaces dentro del offcanvas */
+.offcanvas .offcanvas-body a {
+    font-family: 'Dharma Punk', sans-serif;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.offcanvas .offcanvas-body a:hover {
+    color: #ccc !important;
+}
+
+/* Estilos específicos para los enlaces con clase .nav-link */
+.offcanvas .offcanvas-body .nav-link {
+    display: block;
+    padding: 10px 0;
+}
+
+/* Estilos para los íconos sociales */
+.offcanvas .offcanvas-body .social-icons a {
+    color: #fff !important;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.offcanvas .offcanvas-body .social-icons a:hover {
+    color: #ccc !important;
+    
+}
+
+.social-icons {
+    font-family: 'Courier New', Courier, monospace;
 }
