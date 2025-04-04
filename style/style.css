@@ -130,3 +130,101 @@ body {
     height: auto; /* Mantiene la proporción */
     display: block; /* Asegura que la imagen ocupe todo el espacio del botón */
 }
+
+
+/* SECCION NOTICIAS */
+
+#titulo-noticias{
+    font-family: 'Dharma Punk';
+    font-size: 100px;
+    background: rgba(0, 0, 0, 0.7); /* Gris traslúcido (opacidad 0.5) */
+
+}
+#mas-noticias{
+    font-family: 'Dharma Punk';
+    font-size: 50px;
+    color: black;
+
+}
+
+.noticias-section a{
+    text-decoration: none;
+
+}
+
+
+/* SECCIÓN SUSCRIPCIÓN */
+
+/* Custom styles to match the design */
+.suscribe-section {
+    background-color: #000; /* Fallback background color */
+    overflow: hidden; /* Prevents extra space from showing */
+}
+
+.suscribe-section .row {
+    display: flex;
+    align-items: stretch; /* Makes both columns the same height */
+}
+
+.suscribe-section .image-side {
+    line-height: 0; /* Removes extra space below the image */
+}
+
+.suscribe-section .image-side img {
+    width: 100%; /* Makes the image take the full width of the container */
+    height: auto; /* Let the image's natural height determine the container height */
+    object-fit: cover; /* Scales the image to fit the container while maintaining aspect ratio */
+    object-position: center; /* Centers the image within the container */
+    display: block; /* Ensures no extra space below the image */
+}
+
+.suscribe-section .form-side {
+    background-color: #000; /* Dark background for the form */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the form content */
+    padding: 3rem;
+    height: 100%; /* Match the height of the image side */
+}
+
+.suscribe-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.suscribe-section .form-control {
+    background-color: #333; /* Dark input background */
+    border: none;
+    color: #fff; /* White text in inputs */
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+}
+
+.suscribe-section .form-control::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.suscribe-section .btn-submit {
+    background-color: #e60000; /* Red button */
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.suscribe-section .btn-submit:hover {
+    background-color: #cc0000; /* Slightly darker red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .suscribe-section .image-side img {
+        height: 50vh; /* On smaller screens, set a fixed height to avoid stretching */
+    }
+
+    .suscribe-section .form-side {
+        min-height: 50vh; /* Ensure form section is visible on smaller screens */
+    }
+}

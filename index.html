@@ -65,16 +65,82 @@
     <!-- Sección Noticias -->
     <section class="full-width noticias-section">
         <div class="container py-5">
-            <h2>Noticias</h2>
-            <p>Aquí irán las noticias de tu sitio.</p>
+            <!-- Título principal -->
+            <h2 class="text-center mb-4" id="titulo-noticias">NOTICIAS</h2>
+            <hr class="mb-5" style="border-top: 2px solid #000000; width: 50%; margin: 0 auto;">
+    
+            <!-- Fila de noticias -->
+            <div class="row">
+                <!-- Noticia 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/noticias1.png" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Emoción y adrenalina: los buggies conquistan las dunas en una carrera épica
+                            </h5>
+                            <p class="card-text">Los pilotos desafiaron terrenos extremos en una competencia llena de velocidad.
+                                La arena y el viento no fueron obstáculos para una jornada vibrante de automovilismo.
+                                Aficionados disfrutaron de adelantamientos espectaculares y finales ajustados.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Noticia 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/noticias2.png" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Dominio total: Gronholm arrasa en la última fecha del Rallycross Mundial</h5>
+                            <p class="card-text">Con una actuación impecable, el piloto dejó sin opciones a sus rivales.
+                                Su estrategia agresiva y control sobre el auto lo llevaron directo a la victoria.
+                                La temporada cierra con una de las mejores demostraciones de manejo del año.
+                                
+                                </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Noticia 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/noticias3.png" class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Batalla en la tierra: los mejores equipos se enfrentan en una feroz competencia de Rallycross
+                            </h5>
+                            <p class="card-text">Derrapes, saltos y choques marcaron una jornada llena de acción y adrenalina.
+                                La lucha por el campeonato se definió en una pista exigente y llena de barro.
+                                Equipos y pilotos lo dieron todo en un espectáculo digno de los fanáticos del motor.               
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Enlace "Más noticias" -->
+        <div class="text-center mt-4">
+            <a href="#" id="mas-noticias">Mas noticias</a>
+        </div>
+    </div>
         </div>
     </section>
 
     <!-- Sección Suscribe -->
-    <section class="full-width suscribe-section">
-        <div class="container py-5">
-            <h2>Suscribirse</h2>
-            <p>Formulario o contenido para suscribirse.</p>
+    <section class="suscribe-section">
+        <div class="row g-0"> <!-- g-0 removes gutter spacing -->
+            <!-- Left Side: Image -->
+            <div class="col-md-6 image-side"><img src="assets/suscribite.jpg" alt=""></div>
+            <!-- Right Side: Form -->
+            <div class="col-md-6 form-side">
+                <h2>¡Unite a la comunidad de Rallyland!</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Ingresá tu email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" placeholder="Ingresá tu número telefónico" required>
+                    </div>
+                    <button type="submit" class="btn btn-submit w-100">Enviar</button>
+                </form>
+            </div>
         </div>
     </section>
 
