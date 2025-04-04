@@ -64,12 +64,7 @@ body {
     justify-content: center; /* Centra el logo horizontalmente */
 }
 
-.offcanvas-logo {
-    max-width: 150px;
-    height: auto;
-    margin-left: 30px;
-    
-}
+
 
 /* Estilos para el cuerpo del offcanvas */
 .offcanvas .offcanvas-body {
@@ -116,7 +111,7 @@ body {
 
 /* Estilos para el botón que contiene la imagen */
 .menu-button {
-    background: rgba(0, 0, 0, 0.5); /* Gris traslúcido (opacidad 0.5) */
+    background: rgba(0, 0, 0, 0.7); /* Gris traslúcido (opacidad 0.5) */
     border: none; /* Sin borde */
     border-radius: 10px; /* Bordes redondeados */
     padding: 8px; /* Espacio interno para que la imagen no quede pegada a los bordes */
