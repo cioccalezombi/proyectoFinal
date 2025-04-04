@@ -46,6 +46,8 @@ body {
 /* Estilos para el offcanvas */
 .offcanvas {
     background-color: #000 !important; /* Fondo negro */
+    z-index: 1051;
+
 }
 
 /* Estilos para el header del offcanvas */
@@ -116,6 +118,10 @@ body {
     border-radius: 10px; /* Bordes redondeados */
     padding: 8px; /* Espacio interno para que la imagen no quede pegada a los bordes */
     cursor: pointer; /* Cursor de mano al pasar el mouse */
+    position: fixed;
+    z-index: 1051;
+    top: 40px;
+    left: 20px;
 }
 
 /* Estilos para la imagen del menú */
