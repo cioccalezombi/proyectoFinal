@@ -6,34 +6,20 @@
     padding: 30px 0;
 }
 
-.parallax-section {
-    position: relative;
-    background: url('../assets/movingBackground.jpeg') no-repeat center center;
-    background-size: cover;
-    min-height: 50vh;
-}
-.car-overlay {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    transition: right 0.1s ease-out;
-    width: 600px; /* Tamaño fijo */
-    height: auto;
-    max-width: none; /* Anula el max-width de img-fluid */
-}
-
 
 body {
     background-image: url('../assets/background.png'); /* Reemplaza con la URL o ruta de tu imagen */
     background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
     margin: 0;
     color: white;
 }
 
+body a{
+    color: black;
+    text-decoration: none;
+}
 
 /* BARRA DE NAVEGACIÓN */
 @font-face {
@@ -131,26 +117,49 @@ body {
     display: block; /* Asegura que la imagen ocupe todo el espacio del botón */
 }
 
+/* Media query para pantallas de celulares */
+@media (max-width: 768px) { /* 768px es un breakpoint común para móviles */
+    .menu-icon {
+        width: 25px; /* 25% de 100px = 25px */
+        
+    }
+}
 
-/* SECCION NOTICIAS */
+/* SECCION NOTICIAS y EVENTOS*/
 
 #titulo-noticias{
     font-family: 'Dharma Punk';
     font-size: 100px;
     background: rgba(0, 0, 0, 0.7); /* Gris traslúcido (opacidad 0.5) */
+    color: white;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+
 
 }
 #mas-noticias{
     font-family: 'Dharma Punk';
-    font-size: 50px;
-    color: black;
-
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7); /* Gris traslúcido (opacidad 0.5) */
+    padding: 10px;
+    transition: color 0.3s ease; /* Transición suave para el hover */
 }
+
+#titulo-noticias:hover {
+    color: #ccc; /* Color gris claro al pasar el mouse */
+}
+
+#mas-noticias:hover{
+    color: #ccc; /* Color gris claro al pasar el mouse */
+}
+
+
 
 .noticias-section a{
     text-decoration: none;
 
 }
+
 
 
 /* SECCIÓN SUSCRIPCIÓN */
@@ -226,5 +235,67 @@ body {
 
     .suscribe-section .form-side {
         min-height: 50vh; /* Ensure form section is visible on smaller screens */
+    }
+}
+
+/* FOOTER */
+
+/* Estilos generales para el footer */
+.footer-section {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0; /* Espaciado interno */
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* Contenedor para centrar el contenido */
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para la sección de redes sociales */
+.social-media {
+    margin-bottom: 15px; /* Espacio debajo de los íconos */
+}
+
+.social-media h5 {
+    font-size: 1.2rem; /* Tamaño del título "Social Media" */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #fff; /* Color blanco */
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-media a {
+    color: #fff; /* Color blanco para los íconos */
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    margin: 0 10px; /* Espacio entre los íconos */
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+.social-media a:hover {
+    color: #ccc; /* Color gris claro al pasar el mouse */
+}
+
+/* Estilos para el texto de derechos de autor */
+.copyright {
+    font-size: 0.9rem; /* Tamaño del texto */
+    margin: 0; /* Sin márgenes adicionales */
+}
+
+/* Asegurar que el footer sea responsive */
+@media (max-width: 768px) {
+    .social-media a {
+        font-size: 1.2rem; /* Reducir el tamaño de los íconos en pantallas pequeñas */
+        margin: 0 8px; /* Reducir el espacio entre íconos */
+    }
+
+    .social-media h5 {
+        font-size: 1rem; /* Reducir el tamaño del título */
+    }
+
+    .copyright {
+        font-size: 0.8rem; /* Reducir el tamaño del texto de derechos */
     }
 }
